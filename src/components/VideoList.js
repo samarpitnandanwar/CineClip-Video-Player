@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./VideoList.css";
+import SearchBar from "./SearchBar";
 
-const VideoList = ({ categorizedVideos }) => {
+const VideoList = ({ categorizedVideos, allVideos }) => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   return (
     <div className="video-list-container">
+      <SearchBar allVideos={allVideos} />
       <div className="category-list">
         {Object.keys(categorizedVideos).map((category) => (
           <button

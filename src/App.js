@@ -14,16 +14,22 @@ const App = () => {
     "TV Shows": [],
     "Web Series": [],
   };
+  const allVideos = Object.values(categorizedVideos).flat();
 
   return (
     <Router>
       <div className="app-container">
         <div className="background"></div>
-        <h1>Dynamic Video Player</h1>
+        <h1>Cine-ClipVideo Player</h1>
         <Routes>
           <Route
             path="/"
-            element={<VideoList categorizedVideos={categorizedVideos} />}
+            element={
+              <VideoList
+                allVideos={allVideos}
+                categorizedVideos={categorizedVideos}
+              />
+            }
           />
           <Route path="/video/:videoId" element={<VideoPlayer />} />
         </Routes>
