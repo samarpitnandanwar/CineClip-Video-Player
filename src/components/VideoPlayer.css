@@ -20,6 +20,12 @@
   align-items: center;
 }
 
+
+.password-generator{
+  color: #fff;
+  padding-bottom: 10px;
+}
+
 .password-input {
   padding: 10px;
   margin-bottom: 10px;

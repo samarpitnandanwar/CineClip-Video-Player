@@ -45,6 +45,9 @@ const VideoPlayer = () => {
         </>
       ) : (
         <div className="password-container">
+          <a className="password-generator" href="https://cineclip-password-generator.netlify.app">
+            Generate the password
+          </a>
           <input
             type="password"
             placeholder="Enter password"
@@ -52,7 +55,10 @@ const VideoPlayer = () => {
             onChange={handlePasswordChange}
             className="password-input"
           />
-          <button onClick={handlePasswordSubmit} className="password-submit-button">
+          <button
+            onClick={handlePasswordSubmit}
+            className="password-submit-button"
+          >
             Submit
           </button>
         </div>
