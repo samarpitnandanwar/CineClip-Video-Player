@@ -4,11 +4,15 @@ import "./VideoPlayer.css";
 
 const passwords = {
   "Crew 2024": "318522",
+  "Money Heist - Season 1 - Episode 1": "mh123",
+  "Money Heist - Season 1 - Episode 2": "mh124",
+  // Add more passwords here for other videos
 };
 
 const VideoPlayer = () => {
-  const { videoId } = useParams();
-  const videoSrc = `/videos/${videoId}.mp4`;
+  const { videoId, series, season, episode } = useParams();
+  const videoName = series ? `${series} - ${season} - ${episode}` : videoId;
+  const videoSrc = `/videos/${videoName}.mp4`;
   const [password, setPassword] = useState("");
   const [isAuthorized, setIsAuthorized] = useState(false);
 
@@ -17,7 +21,7 @@ const VideoPlayer = () => {
   };
 
   const handlePasswordSubmit = () => {
-    if (password === passwords[videoId]) {
+    if (password === passwords[videoName]) {
       setIsAuthorized(true);
     } else {
       alert("Incorrect password");
@@ -32,7 +36,7 @@ const VideoPlayer = () => {
             <source src={videoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <a href={videoSrc} download={videoId} className="download-button">
+          <a href={videoSrc} download={videoName} className="download-button">
             Download Video
           </a>
         </>

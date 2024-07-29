@@ -1,61 +1,48 @@
 .video-list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-y: auto;
 }
 
 .category-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
 .category-button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  margin: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
-}
-
-.category-button:hover {
-  background-color: #0056b3;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
 }
 
 .category-button.active {
-  background-color: #0056b3;
+  background-color: #555;
 }
 
 .movies-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   gap: 10px;
 }
 
 .video-link {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 5px;
+  color: #333;
   text-decoration: none;
-  color: #007bff;
-  transition: background-color 0.3s, border-color 0.3s;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .video-link:hover {
   background-color: #f0f0f0;
-}
-
-.video-link.active {
-  background-color: #007bff;
-  color: #fff;
-  border-color: #007bff;
 }

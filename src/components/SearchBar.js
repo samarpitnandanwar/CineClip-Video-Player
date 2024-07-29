@@ -31,7 +31,7 @@ const SearchBar = ({ allVideos }) => {
         <ul className="search-results">
           {filteredVideos.map((video, index) => (
             <li key={index} onClick={() => handleResultClick(video)}>
-              {video}
+              {video.replace(/([A-Z])/g, " $1").trim()}
             </li>
           ))}
         </ul>
