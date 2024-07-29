@@ -4,6 +4,9 @@ import "./VideoPlayer.css";
 
 const passwords = {
   "Crew 2024": "318522",
+  "Thor 2011": "thor@_2011",
+  "Madgaon Express 2024": "madgaon@2024",
+  "Chandu Champion 2024": "chandu@2024",
   "Money Heist - Season 1 - Episode 1": "mh123",
   "Money Heist - Season 1 - Episode 2": "mh124",
   // Add more passwords here for other videos

@@ -13,13 +13,10 @@ const App = () => {
     "Marvel Studio": ["Thor 2011"],
     "TV Shows": [],
     "Web Series": {
-      "Money Heist": {
+      "Mirzapur": {
         "Season 1": ["Episode 1", "Episode 2", "Episode 3"],
         "Season 2": ["Episode 1", "Episode 2", "Episode 3"],
-      },
-      "Stranger Things": {
-        "Season 1": ["Episode 1", "Episode 2", "Episode 3"],
-        "Season 2": ["Episode 1", "Episode 2", "Episode 3"],
+        "Season 3": ["Episode 1", "Episode 2", "Episode 3"],
       },
     },
   };
